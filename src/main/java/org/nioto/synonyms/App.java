@@ -8,7 +8,16 @@ package org.nioto.synonyms;
 public class App 
 {
     public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    throws Exception {
+    	
+    	String word ;
+    	word = "abaisser";
+    	System.out.println( Thesaurus.getSynonyms(word));
+    	word = "zythum";
+    	System.out.println( Thesaurus.getSynonyms(word));
+    	
+    	word = "bohémien";
+    	System.out.println( Thesaurus.getSynonyms(word));
+    	
     }
 }
